@@ -23,3 +23,4 @@ For more details on how the app works review the [Starter App tutorial](https://
 ## License Summary
 
 This sample code is made available under a modified MIT license. See the LICENSE file.
+# rekognition-demo
