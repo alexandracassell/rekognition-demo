@@ -30,6 +30,6 @@ Set up AWS - followed these instructions https://docs.aws.amazon.com/rekognition
     1. AmazonRekognitionReadOnlyAccess
 3. Install AWS CLI and get access id/key for IAM user
 
-Cloned this starter app to hook up to AWS https://aws.amazon.com/blogs/mobile/amazon-rekognition-detects-celebrities-in-ios-app/
+Cloned this starter app to hook up to AWS (steps above) https://aws.amazon.com/blogs/mobile/amazon-rekognition-detects-celebrities-in-ios-app/
 1. Manually created Amazon Cognito identity pool and correct permisions/roles
 2. Had to brew install cocoapods
