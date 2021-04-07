@@ -18,4 +18,18 @@ For more details on how the app works review the [Starter App tutorial](https://
 ## License Summary
 
 This sample code is made available under a modified MIT license. See the LICENSE file.
+
 # rekognition-demo
+## Steps I followed to set up
+
+Using Amazon Rekognition https://docs.aws.amazon.com/rekognition/latest/dg/text-detecting-text-procedure.html
+
+Set up AWS - followed these instructions https://docs.aws.amazon.com/rekognition/latest/dg/getting-started.html
+1. Free account
+2. IAM user with correct permissions
+    1. AmazonRekognitionReadOnlyAccess
+3. Install AWS CLI and get access id/key for IAM user
+
+Cloned this starter app to hook up to AWS https://aws.amazon.com/blogs/mobile/amazon-rekognition-detects-celebrities-in-ios-app/
+1. Manually created Amazon Cognito identity pool and correct permisions/roles
+2. Had to brew install cocoapods
