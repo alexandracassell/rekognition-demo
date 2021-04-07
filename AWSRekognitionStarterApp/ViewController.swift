@@ -27,6 +27,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     @IBOutlet weak var mileageInput: UITextField!
     
+    @IBOutlet weak var messageLabel: UILabel!
+    
     var mileage: Int? = 0
     
     override func viewDidLoad() {
@@ -62,6 +64,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func submitMileage(_ sender: UIButton) {
         mileage = Int(mileageInput.text ?? "0")!
         print(mileage ?? 0)
+        
+        if (OdometerImageView.image != nil) {
+            let odomImage: Data = UIImageJPEGRepresentation(OdometerImageView.image!, 0.2)!
+            detectMileage(odometerImageData: odomImage)
+        }
+        else {
+            print("Please upload a picture before submitting mileage")
+            messageLabel.text = "Please upload a picture"
+        }
     }
     
     // MARK: - UIImagePickerControllerDelegate
@@ -74,8 +85,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         OdometerImageView.image = image
         
-        let odomImage:Data = UIImageJPEGRepresentation(image, 0.2)!
-        detectMileage(odometerImageData: odomImage)
+        //let odomImage:Data = UIImageJPEGRepresentation(image, 0.2)!
+        //odomImage = UIImageJPEGRepresentation(image, <#T##compressionQuality: CGFloat##CGFloat#>)
+        //detectMileage(odometerImageData: odomImage)
     }
     
     
@@ -120,19 +132,18 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
                         }
                     }
                     print(acceptableInput)
+                    if (acceptableInput) {
+                        print(String(self.mileage!))
+                        self.messageLabel.text = "Mileage: " + String(self.mileage!)
+                    }
+                    else {
+                        self.messageLabel.text = "Mileages do not match"
+                    }
             }
                 else {
-                    print("No text was detected")
+                    print("Mileage was not detected")
+                    self.messageLabel.text = "Mileage was not detected"
                 }
         }
     }
-        
-    
-//    @objc func handleTap(sender:UIButton){
-//        print("tap recognized")
-//        let celebURL = URL(string: self.infoLinksMap[sender.tag]!)
-//        let safariController = SFSafariViewController(url: celebURL!)
-//        safariController.delegate = self
-//        self.present(safariController, animated:true)
-//    }
 }

@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:AWSRekognitionStarterApp.xcodeproj">
+      location = "group:/Users/n0342337/Desktop/dev/rekognition-demo/AWSRekognitionStarterApp.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

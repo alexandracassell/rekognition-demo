@@ -19,7 +19,6 @@
 		76A77379213F302200974231 /* AWSRekognitionStarterAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76A77378213F302200974231 /* AWSRekognitionStarterAppUITests.swift */; };
 		76F9DD9A213F5724006358C3 /* Celebrity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F9DD99213F5724006358C3 /* Celebrity.swift */; };
 		95CE485162F942032A5E13F5 /* Pods_AWSRekognitionStarterApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF46A2EA46CBF4F6D649739 /* Pods_AWSRekognitionStarterApp.framework */; };
-		F004822D2151CED700FCE53B /* jeff_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = F004822C2151CED700FCE53B /* jeff_portrait.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +63,6 @@
 		76F9DD99213F5724006358C3 /* Celebrity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Celebrity.swift; sourceTree = "<group>"; };
 		CBC5CAB1E1E06D6159FAFE61 /* Pods_AWSRekognitionStarterAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWSRekognitionStarterAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33859DD844A86E9F7DF3BD6 /* Pods-AWSRekognitionStarterAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWSRekognitionStarterAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AWSRekognitionStarterAppUITests/Pods-AWSRekognitionStarterAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F004822C2151CED700FCE53B /* jeff_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeff_portrait.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +118,6 @@
 		76A77357213F302100974231 /* AWSRekognitionStarterApp */ = {
 			isa = PBXGroup;
 			children = (
-				F004822C2151CED700FCE53B /* jeff_portrait.png */,
 				76F9DD99213F5724006358C3 /* Celebrity.swift */,
 				76A77358213F302100974231 /* AppDelegate.swift */,
 				76A7735A213F302100974231 /* ViewController.swift */,
@@ -288,7 +285,6 @@
 				76A77363213F302100974231 /* LaunchScreen.storyboard in Resources */,
 				76A77360213F302100974231 /* Assets.xcassets in Resources */,
 				76A7735E213F302100974231 /* Main.storyboard in Resources */,
-				F004822D2151CED700FCE53B /* jeff_portrait.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
